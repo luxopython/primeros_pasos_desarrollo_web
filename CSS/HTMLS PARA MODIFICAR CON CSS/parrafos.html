@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+    <head>
+        <meta charset="utf-8"> <title>APLICANDO ESTILO A p por selector de grupo </title> <meta name="Description" content="Pagina2">
+        <meta name="Keywords" content="Curso, HTML, CSS, programacion WEB">
+       
+        <!--declaracion de estilo interna que afecta a la pagina donde se hace en este caso a los H1-->
+       <style type="text/css"> /*en esta parte considerada ya CSS los comentarios se ponen asi*/
+        P[name="miEstilo"]{  /*creamos estilo para modificar todos las etiquetas que elijamos "selector de grupo"*/
+            color: aqua;
+            font-family: Impact;
+            font-size: 36px;
+        }
+        
+        </style>
+    </head>
+<body>
+    <p name ="miEstilo"> Esto es un parrafo de texto para hacer una <b>prueba en negrita con el tag b</b> y <u>aqui subrayo a ver que pasa con u</u></p>
+    <br>
+    <p>otro parrafo sin seleccionar estilo</p>
+    <pre> esto deberia ser un texto preformateado
+        con la etiqueta "pre"...
+        que     interpreta el texto tal cual lo escribimos en el codigo
+    </pre>
+
+</body>
+
+</html>

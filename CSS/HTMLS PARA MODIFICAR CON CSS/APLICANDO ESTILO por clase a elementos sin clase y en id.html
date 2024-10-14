@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <title>APLICANDO ESTILO por clase a elementos sin clase y en id</title> <meta name="Description" content="Pagina2">
+        <meta name="Keywords" content="Curso, HTML, CSS, programacion WEB">
+       
+        <!--declaracion de estilo interna que afecta a la pagina donde se hace en este caso a los H1-->
+       <style type="text/css"> /*en esta parte considerada ya CSS los comentarios se ponen asi*/
+        p {
+        text-align: center;
+        font-family: "Calibri";
+        color: blue;
+        font-size: 56px
+        }
+        .miEstilo{color: aqua;} /*creamos un estilo para aplicar por clase comienza por punto siempre*/
+        .miEstiloapalabra{color: chartreuse;}/*creamos un estilo para aplicar a un elemento sin etiqueta una palabra <span> */
+        #otroEstilo{color: blueviolet;}/*estilo para aplicar en solo en id*/
+        
+        </style>
+    </head>
+    <body>
+        <p>esto es un parrafo</p>
+        <hr>
+        <p class="miEstilo">esto es un parrafo separado del anterior con una <span class="miEstiloapalabra">separacion</span>  de linea hecha con hr</p>
+        <p id="otroEstilo">esto es otro parrafo con estilo en el id</p>
+    </body>
+</html>
